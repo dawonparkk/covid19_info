@@ -6,12 +6,14 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <fragment
-        android:id="@+id/map"
+    <!--xmlns:android="http://schemas.android.com/apk/res/android"-->
+
+    <fragment xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/myMap"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:contect = ".MapsActivity"
-        class="com.google.android.gms.maps.MapFragment"/>
+        tools:context=".MainActivity" />
 
     <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
